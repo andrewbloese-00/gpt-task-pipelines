@@ -1,0 +1,399 @@
+[1] Win The Future with Google’s AI Ads Notes
+AI solutions are even more powerful when used together. For example, advertisers who adopt responsive Search ads in campaigns that also use broad match and Smart Bidding see an average of 20% more conversions at a similar cost per action, according to internal Google data.
+Advertisers who use Google's AI across channels with Performance Max campaigns in their account see an average increase of 13% total incremental conversions at a similar cost per action, according to an internal Google study. Remember that these benefits can only be unlocked when budgets are unconstrained, allowing machine learning to drive maximum performance.
+Identify your Objectives
+	•	The first step to adopting any google AI solution is to align on the most relevant, impactful metrics for your business
+	•	Identify business objectives and marketing metrics
+	◦	Business objective → designed to drive and measure business results. such as revenue, profit, or market share.
+	◦	Marketing metrics → align to business objectives such as
+	▪	total revenue on add spend
+	▪	profitability per dollar invested
+	▪	number of quality customers aquired
+	•	Ensure alignment across leadership
+	◦	The leadership team including CMO and CFO should align on marketing metrics ideally before the beginning of a new year.
+	◦	building communication & alignment between marketing and finance stakeholders,
+	▪	drives clear message marketing efforts should be designed to drive the right results for the business.
+	▪	not just towards intermediary metrics such as clicks or CPC (cost per conversion)
+	◦	Work with your marketing and finance teams to showcase how modern marketing isn't an expense on your balance sheet but an investment that directly contributes to whatever business goals your company has — profit, revenue, or maybe lifetime value growth.
+	▪	marketing ≠ expense, rather marketing = investiment
+	◦	Later when activating against this marketing metric, make sure that your Smart Bidding strategy aligns most closely with your objective.
+	◦	Optimizing Towards Value is a powerful way to drive incremental results for advertisers
+	◦	According to Google internal data, advertisers who switch from a target CPA to a target ROAS bid strategy can see an average of 14% more conversion value at a similar return on ad spend
+	•	Create Single source of Truth for measuring success
+	◦	encourage your c-suite to create a set of joint KPIs between marketing and finance teams to track on a regular basis.
+	◦	then build a single shared source of truth to help them measure against these to demonstrate impact of marketing on company performance.
+	◦	most brands have a limited set of metrics (typically 5 to 10) that inform marketing investment decisions.
+	◦	If your org is more advanced you may summarize their reporting on a strategic scorecard or dashboard.
+Build a strong data strategy
+	•	Drive the right metrics
+	◦	Google’s AI works best with strategic human input including…
+	▪	setting the right goal
+	▪	fueling it with data and insights such as audience or seasonality.
+	▪	data can also inspire new ideas
+	◦	Google’s AI needs advertisers to instruct it with high quality data and correct guidance.
+	◦	Privacy Safe data is the key to building a more sophisticated, impactful marketing strategy.
+	◦	Data is $$ because
+	▪	high quality → receive data straight from source, the customer.
+	▪	Relevant → Data relates directly to products you sell and the customers who buy from you
+	▪	Unique → no other company has the same customer data as you
+Anchor a Data Strategy
+	•	The data advertisers provide ML algorithms help shape and define how Google’s AI will perform.
+	◦	The more accurate data an advertiser provides, the better trained the algo will be to deliver stronger results
+	◦	When creating a first-party data strategy, root it in business objectives
+	•	To make sure data links to goals, encourage C-suite to align with relevant teams in order to ensure you have the right customer experience and consent processes in place to let your teams access and use the data they need.
+Examples of impactful data sources
+	•	Offline Data
+	◦	if your business involves offline sales or leads, use offline data to help optimize toward objectives,
+	▪	not just e-commerce goals.
+	•	Customer Segmentation Data
+	◦	Telling your marketing engine who your high-value customer are is important to driving the results you desire.
+	◦	If goal is to drive quality leads, segmenting customers by value can help ID even more customers like those who are already valuable.
+	◦	This helps drive impact against your marketing metrics and business objectives.
+	•	Profit Margin Data
+	◦	identifying the value of your products and services in relation to one another helps you see where you need to focus to drive profit.
+	◦	EG:
+	▪	gross merchandise value
+	▪	incremental active accounts
+	▪	lifetime value
+	▪	predictive lifetime value
+	▪	12 month profitability
+Build A Robust Database
+	•	Algorithms don’t need a huge amount of data, they need the right data.
+	•	To build a robust database and connect it to relevant platforms, google highlights three steps as follows…
+	1	Build a robust first party DB to inform a business objective oriented marketing strategy
+	•	Tech:
+	◦	integrate marketing and data/customer management platforms to enable an automated flow of data.
+	◦	Google’s Ad and Cloud Products help make faster, better decisions by combining previously siloed data to unlock insights that lead to timeley and relevant customer messaging. Surfacing behavioral predictions to help your advertiser invest more effectively in marketing.
+	•	People
+	◦	the key is to build infrastructure that breaks down the organizational silos and connect the dots between data within your org.
+	◦	These teams can set up automated processes that allow for the seamless connection of data.
+	▪	this is where a data scientist or data analytics team is important for connecting the data silos
+	•	Process
+	◦	stand up automated processes allowing for seamless connection of data
+	◦	where possible USE YOUR OWN DATA.
+	▪	the more processes and tech that are done in house, the more control you have within your ecosystem.
+	▪	If your team doesn’t have the bandwidth, work with a 3rd party to measure business value within first-party data.
+	1	Make sure your strategy is built to cultivate customer trust and use that trust to build relationships.
+	•	Create fair value exchange with users & obtain consent to guide your data strategy.
+	◦	Communicate a clear value proposition. Make it easy for customers to see benefits of sharing data with you.
+	◦	Design neat and digestible consent forms. Be upfront and open about how data is used.
+	▪	Let customers withdraw your access to their data at any time.
+	◦	Comply with local regulations. Make time to ensure you understand how regulations might impact their business.
+	▪	this helps deliver an ad experience that is inline with expectations of users / governing bodies.
+	1	Develop a strategy to share first-party data across media platforms.
+	•	Sharing first party data across media platforms enables better activation, measurement and optimization in campaigns.
+	•	Bidding and conversion tracking
+	◦	import data that is logged offline (in your database or CRM system) via enhanced conversions for leads, offline conversion import, store visits or store sales.
+	•	Audience and activation
+	◦	upload data manually through the Google Ads or DV360 APIs, or use Customer Match Uploader (CMU).
+	◦	CMU connects to all top CRMs and customer data platforms (CDPs), and data onboarders that allow for seamless ingestion of data across Google Ads and Google Marketing Platform (GMP)
+	▪	Accessible via API or UI via direct integrations or through Zapier.
+	▪	Cloud service providers like GCP can help capture and organize the information shared by people during both online interactions like conversions, store visits, or phone calls.
+	◦	Make sure this data is uploaded for 1 to 2 weeks before beginning to activate within campaigns to ensure all data is funneling into account properly & aligned with what you see internally.
+Create a future proof measurement strategy
+	•	Ensure you have a solid foundation of online conversion measurement.
+	•	Correct measurement allows you to track conversion actions before setting up attribution and optimization with Smart Bidding.
+	•	As best practice, implement the global site tag as well as Enhanced Conversions to minimize gaps when cookies aren’t available.
+	•	For Google Ads conversions, advertisers may implement the following, based on their business objectives…
+	◦	Online Sales → if measuring online sales with transaction specific values and use the Google tag, you can track transaction specific conversion values.
+	▪	Also use **********************Tag Manager to deploy conversion tags with values.
+	▪	If you use Google Analytics to measure web or app values, you can import your conversions into Google Ads conversion tracking
+	◦	Lead generation → if you measure from lead generation campaigns that have been qualified or closed, you should implement enhanced conversions for leads
+	◦	Offline Sales → If you measure the impact of your online ad spend with offline sales,  implement store sales measurement.
+	◦	Other Offline Converions → If your conversion value is only available offline or in your customer relationship management (CRM) system, you can also import offline conversions from ad clicks into Google Ads.
+Activate Everywhere with Google’s AI solutions
+	•	Once ML knows what’s important to your business, it can help the brand show up at key impactful moments.
+	◦	AI search solutions work to lift performance by helping advertisers deliver more relevant creative to more queries at the right price. Three Pillars to Building a strong Search automation strategy.
+	1	Adopt automated bidding strategy most closely aligned to business objectives and marketing metrics
+	1	automated bidding takes the heavy lifting and guessing out of setting bids to meet performance goals. Each type of automated bid strategy is designed to help you achieve a specific goal.
+	2	Value based bidding maximize conversion value (with or without a ROAS goal).
+	1	a subset of bid strategies that specifically optimize to conversion values
+	2	Use broad match to automatically find new, high-performing queries and emerging trends.
+	1	Solutions like broad match in combo with smart bidding should be your default match type to help find all available demand.
+	2	Broad Match → uses ML based on semantic understanding to help your ads show up when relevant. Helping drive performance against new queries which may not be covered by exact or phrase match keywords.
+	1	helps ads reach a wider audience without building extensive keywords list.
+	2	Advertisers that switch their exact match keywords to broad match in campaigns using a target ROAS can see an average 20% more conversion value, according to internal google data.
+	3	Expand reach with responsive search ads and image assets.
+	1	with automated creatives, advertisers provide assets instead of ads.
+	2	Assets can be combined to create optimal ad for each query.
+	3	Responsive search ads and image assets help brands tailor the most relevant messages to each user.
+	4	Use ad strength to set your creative up for success before running your ads and asset reporting to track how creative ingredients are performing to learn what resonates with customers
+	5	Advertisers who increase ad strength from Poor to Excellent see 9% more clicks and conversions on average - internal google data
+	4	automated creatives should be combined with other AI powered features to create multiplicative effect for driving growth.
+	1	Advertisers who adopt responsive search ads in campaigns that also use broad match and Smart Bidding see an average of 20% more conversions at a similar cost per action - internal google data
+	1	
+	•	Automate Search Campaigns through bidding, creatives, and targeting.
+	•	Add Performance Max campaigns to ensure your brand shows up consistently across all google ads channels and inventory.
+	◦	they offer greatest channel and inventory coverage of any Google Ads campaign.
+	◦	They put your goals (eg online sales, lead generation, store goals_ front and center to help look for highest ROI conversion opportunities.
+	◦	Add this to existing campaign mix to find new customers and grow conversions across googles full range of channels.
+	◦	Search, Youtube, Display, Discover, Gmail, and Maps
+	◦	Even if client isn’t ready to adopt performance max, there are additional opportunities to explore and bid on conversion value data across Discovery, Video, App, and Display. Adopting value bidding in your existing campaigns can help drive value for your clients business.
+	•	Uncap budgets to fully capture the benefits of automation
+	◦	campaigns need sufficient budget headroom to let Google’s AI work to its fullest potential and achieve impactful growth.
+	◦	Use budget raising recommendations and the impression share lost by budget metric to immediately ID the incremental conversions and conversion value your client can gain at a specific level of budget increase.
+	◦	All budget growth recommendations are provided in real time to make sure your client doesn’t miss out on traffic.
+	◦	If your advertiser is planning longer term, they can use Performance Planner to plan up to 18 months ahead of time.
+	◦	With Google’s AI, clients also need to create new campaigns. They can now leverage the new campaign construction process in Google Ads to create new campaigns with value bidding, broad match and creative excellence best practices in place while understanding what budget and bid are sufficient to drive automated growth.
+	•	Use automatically applied recommendations to optimize campaigns.
+	◦	these let advertisers to continuously apply a certain subset of optimization score suggestions to improve account performance and help an account run at its full potential.
+	◦	Recommendations are surfaced in real time from the millions of intent signals captured through automation.
+	▪	they react to market changes as they happen to ensure campaigns are optimized toward an advertisers true goals.
+Test, learn and scale
+	•	Some may be cautious about AI powered approaches. It is important to adopt a “test and learn” mindset and start small before going big.
+	•	Here are some ways to begin to test, learn and scale new AI powered solutions.
+	•	Test With Google Ads Experiments
+	◦	drafts and experiments can help create small test for a location or product groups before goin all in on a new solution.
+	◦	One-click experiments can be created directly from recommendations cards for certain types of recommendations (like broad match adoption)
+	◦	Once you ID an opportunity within the recommendations page, apply it through a one click experiment to begin a test.
+	•	Make Use Of Insights
+	◦	use the insights page within google ads to ID trends in your markets and understand performance.
+	◦	you can find recommendations there as well to help improve optimization score and campaign performance by reviewing insights.
+	◦	You can review, apply keyword, budget and bidding recommendations in just a few clicks.
+	◦	Setting up auto applied recommendations can make this process even simpler
+Digital Leaders Have an Agile Mindset
+	•	For individual leaders, the agility needed to embrace automation might require a mindset change, but that shift can help marketers focus on growth, new opportunities, and innovation
+	•	To prepare for an even more automated future, help your C-Suite understand the value they can gain from digital transformation. The results are worth the effort.
+	•	A BCG study found that digital leaders achieve 3 times higher revenue than those who don’t adopt digital innovations.
+	•	Common Traits for Digital Leaders
+	◦	Scaling Capabilities → Leaders build capabilities in key areas like high quality data, skilled workforce, and cloud adoption.
+	◦	Leading with agility → 74% of digital leaders establish agile funding so digital programs can scale if they contribute to strategic goals.
+	◦	Always-on mindset → leaders steer with adaptive, always-on mindset to improve and scale pilots as the landscape changes and they prove their ROI
+Show what you know
+The first step to adopting an automated solution is to align on the most relevant, impactful metrics for your business.
+	•	Choose the three criteria that indicate you have successfully identified the right marketing metrics.
+	•	[x] Metrics connect to how an you plan to achieve your business objectives through measurable KPIs.
+	•	[x] The C-suite owns a joint set of measurable KPIs between marketing and finance teams and tracks progress regularly.
+	•	[x] The leadership team has aligned on marketing metrics and developed clear communication to show how marketing efforts drive business results.
+	•	[ ] Metrics are measured by an analytics team within the marketing team and shared to the leadership team on an annual basis.
+Key takeaways
+	•	The consumer journey is increasingly complex, and users' expectations for relevant ads are rising. Google's AI is the solution businesses and agencies are using to stay ahead of ongoing shifts in consumer demand.
+	•	To maximize impact against their business objectives and use Google's AI to develop an even more sophisticated marketing strategy, advertisers need to follow these four steps: identify the right metrics for their marketing strategy, drive the right metrics by providing the right data to Google's systems, activate everywhere, and test, learn, and scale.
+
+[2] Explore The Value Of Human Input
+	•	Modern advertising is becoming increasingly AI driven.
+	◦	Automated Bidding
+	◦	Creatives
+	◦	Targeting on Search
+	◦	Fully Automated cross channel campaign types
+	•	Advertising agencies and managers must understand influence of how Google’s AI operates to maximize business value.
+Strong Performance begins with Human Input
+	•	AI Powered Advertising → the advertiser / agency managing campaigns remains in control.
+	◦	AI-algorithms rely on marketers setting clear and correct goals, supplying quality data and intervening to make adjustments when necessary.
+	◦	Google’s Algorithms perform best when influenced by human input
+	▪	AI alone tends to improve campaign performance by over 20% and human input can improve by an additional 15% or m
+Begin with key business objectives
+	•	Begin with goals that align with marketing & business objectives in order to build a strong foundation for automated advertising.
+	◦	this tells the ML an advertiser’s desired outcome and allows a marketer to choose the best automated bidding strategy to maximize value for their business.
+	1	Build a value centric measurement strategy to guide Google’s AI
+	•	value centric measurement strategy → helps advertisers assign value to consumer activities, then optimize to those values.
+	◦	Start by identifying conversion activity that’s most important to your strategy
+	◦	Then define value for these conversions. This requires the ability to capture or calculate the value at time of conversion.
+	▪	this is not a one and done task
+	▪	focus on creating better measurement strategy, not a perfect strategy. You can always improve how you define value as new solutions arise.
+	•	There are 3 common types of value definition
+	1	Actual → value realized at time of conversion
+	▪	(ie) transaction revenue, profit
+	2	Proxy → A general value can be understood at time of conversion.
+	▪	(ie) conversion type A = $20 conversion type B=$50, or lead quality scoring.
+	3	Predictive → A predicted value is calculated at time of conversion based on signals captured (as with subscription value)
+	1	Input Key Performance Indicators
+	•	Value-centric measurement enables advertisers to quantify the monetary or business value associated with a conversion using first-party economic signals
+	◦	(ie) order value, profit, predicted lifetime value
+	◦	allows to assign value to conversions and (in turn) create digital KPIs that align to your marketing objectives.
+	1	Upload KPIs into Google Ads or Search Ads 360
+	•	3 common KPI upload methods
+	◦	After identifying the conversion types and assigned values to each conversion toy can upload them to a search management system.
+	◦	Online Conversion Tracking
+	▪	tools like google ads conversion tracking ,google analytics, and floodlight
+	◦	Offline Conversion Measurement
+	▪	Enhanced Conversions for Leads enable you to feed offline customer conversion data to Google Ads to make decisions based on actual sales or profit data, including indexed data.
+	◦	Store Visit and Store Sale tracking
+	▪	Measuring offline store visits and sales provides a more complete view of the offline sales driven by Google Ads.
+	•	Checklist for checking KPIs are correct fit
+	•	[ ] Do KPIs follow privacy best practices such as global site tag and enhanced conversions?
+	•	[ ] Are the right people aligned to make sure that conversions can be uploaded in a consistent and accurate manner
+	•	[ ] Is your org able to wait the full conversion delay to evaluate performance? Do you need to track a conversion that happens more frequently and indicates a down funnel action will likely happen?
+Fuel Automated Solutions To Achieve Business Objectives
+	•	Google’s AI solutions have evolved quite a bit over the past few years and are more equipped than ever to fuel business growth.
+	•	Use Broad Match Keywords / Regularly review new opportunities to improve campaign reach.
+	◦	Advertiser behavior evolves from managing keywords to overseeing machine learning as it matches all traffic that delivers value while meeting business goals.
+	◦	Continue a regular cycle of optimization to fine tune a campaign’s reach strategy.
+	▪	remove negative keywords that may block relevant traffic
+	▪	review optimization score recommendations to add new keywords, or migrate historical keywords to broad match using human touch to determine which keywords are in line with your strategy.
+	▪	Refresh customer match lists paired with campaigns to ensure first-party data is less than 90 days old.
+	•	Input a strong creative strategy to improve user experiences
+	◦	creatives are what consumers see when making the decision about which business to interact with.
+	◦	Automated assets (like responsive search ads and image assets) allow you to use ML to mix and match assets, combining them into a strong ad for each unique user.
+	◦	Input is required to create assets, but Google AI can help guide you in optimizing those assets.
+	▪	(ie) responsive search ads include Ad Strength rating designed to measure the relevance quantity and diversity of assets.
+	▪	By regularly reviewing actionable feedback from these ratings you can ID opportunities to improve your responsive search ads to maximize performance.
+	▪	Advertisers who improve ad strength from poor to excellent see 9% more clicks and conversions on average.
+	•	Input high quality data and optimize budget and performance targets.
+	◦	value based bidding let marketers turn their campaigns into profit center instead of a cost center.
+	◦	Human input must provide high quality data aligned to business goals to guide ML to set buds according to expected value of each conversion.
+	◦	Use Google Ads tools like performance planner & bid strategy reports to optimize budgets and performance targets to maximize value driven by Smart Bidding strategies.
+	◦	Moving from manual bid optimization to strategic data management and optimization lets you unlock new value within campaigns
+	•	Input a clear account structure to simplify account management.
+	◦	Don’t need to spend time segmenting and managing campaigns or assets by match type, device , location or audience, as ML considers these signals at the time of each auction.
+	◦	Instead build account structure following these principles
+	▪	focus on business goals, not channel silos or manual optimization levers
+	▪	use as few campaigns as possible to achieve objectives to maximize benefits of ML
+	▪	Choose campaign types based on business objectives
+	◦	this approach unlocks marginal return on investment for advertisers, allowing efficient focus on where to spend next marketing dollars.
+	◦	consolidating an account structure can also save time and lead to fewer errors as you can focus on improving quality of inputs optimizations and decision making.
+The marketer’s evolving value add in a world of automation
+	•	Your goal is to increase performance and speed. AI allows you to adapt your workflows and provides tools to guide cadence of decision making.￼
+	•	Allows you to take team and expose them to wider range of tasks
+	◦	instead of doing boring/menial tasks.
+	•	Pick profit as guiding star. Other indicators are more distractions and muddling.
+	•	What is your favorite innovation in the last 6 months? Why?
+	•	Good Contributors = strong opinions , loosely held
+Review Question
+You're a digital marketing manager at an advertising agency working with several clients. AI solutions have allowed you to shift focus and center your workflows on making strategic decisions instead of manual optimizations.
+Which desired strategic workflow aligns with the Google Ads tool that will guide your decision-making?
+	1	Adjust Expected Conversion Rates for Upcoming warehouse Sale
+	◦	Seasonality adjustments
+	2	Forecast campaign performance at an increased ROAS target
+	◦	Performance Planner
+	3	Adjust Conversion values for members of a loyalty program
+	◦	Conversion value rule
+	4	ID potential causes of fluctuations in campaign performance
+	◦	Explanations
+Key takeaways
+	•	A modern advertising strategy is fully powered by AI, but the human touch is necessary to maximize business value.
+	•	An AI-driven strategy needs to begin with a business objective in mind, and a marketer identifying and performance goals that will lead to growth.
+	•	Google's AI solutions have evolved from the Age of Precision to the Age of Prediction.
+	•	Advertising managers who successfully evolve their workflows and behaviors to use new tools can grow their business and prepare themselves for the future of modern advertising.
+
+[3] Create a Keyword Strategy To Reach Users
+	•	Identifying the search terms that might be used to find your business can help you prepare an effective keyword strategy so relevant ads can be served on consumer’s queries
+Build and Effective Keyword Strategy
+	•	Keyword Match Types
+	◦	Exact Match → add brackets around the term; gives most control over who sees your ad but reaches fewer searches than both phrase and broad match
+	◦	Phrase Match → Add “” around the term; more searches reached than exact, fewer than with broad match. Ensures core concept of keyword is present in search term.
+	◦	Broad Match → default match type; allows reaching the most possible consumers searching for your product or service, while saving time from adding a variety of keywords.
+	▪	best for automated bidding strategies.
+Switching to a broad match strategy
+	•	There are a few ways to transition to focus your keyword strategy on broad match
+	◦	Standard Testing Solution
+	▪	use a 1 click experiment within the Recommendations page to test adding broad match keywords.
+	▪	Experiment is automatically created, control arm keeps a current campaign running as is, while experiment arms adds broad match versions of existing exact/phrase keywords
+	▪	ensure objective is defined with the automated bidding strategy used in the campaign
+	▪	Allow experiment to run until results are statistically significant
+	▪	rule of thumb is 30 conversions in 30 days
+	▪	excluding ramp up period (≈7days) and leave test running for at least 3 to 4 weeks or longer
+	▪	evaluate the experiment results based on measured KPIs previously defined to ensure relevance, work further scale broad match across campaigns
+	•	Custom broad match test setups?
+	◦	ID a test campaign and use Custom Experiments to upgrade keywords to broad match
+	◦	Ensure to uncap budget within the selected campaign. If budget is limited, the true uplift potential won’t be realized.
+	◦	Decide on a performance target and keep target steady throughout the test phase. Making manual adjustments can interfere with experiment success
+	◦	Avoid adding negative keywords
+	◦	Upon experiment compilation, eval results and work to further scale broad match
+	•	Ready To Scale?
+	◦	begin applying recommendations. Recommendations to add broad match keywords are surfaced specifically for campaigns where incremental conversions are predicted to be driven by the upgrade, allowing easy prioritization of work.
+	◦	Remove Redundant Keywords
+	◦	Use auto applied recommendations to activate broad match across campaigns, move away from manual implementation and ensure best practices are implemented.
+	•	Steps To Setup a Keyword Strategy (screenshots)￼￼￼
+Optimization Score Tip
+You can use optimization score recommendations to ID ways to improve keyword strategy, such as adding new keywords, removing duplicates, adding negative keywords or address conflicting negative keywords.
+Review Question
+If your shoe company wants to expand to sell kids’ soccer cleats, which match type is correct for each keyword
+	•	kids’ soccer cleats
+	◦	broad match
+	•	“kid’s soccer cleats”
+	◦	phrase match
+	•	[kids’ soccer cleats]
+	◦	exact match
+Best Practices
+	•	defining the right keywords list for a campaign can help show the right ads to the right consumers
+	•	Think Like Your Audience
+	◦	think holistically about all different terms a potential user could use to search for your business
+	•	Organize Keywords by Theme
+	◦	having well defined keyword groups will make it easier to manage and maintain your account and will allow for more relevant ads.
+	◦	Example: Shoe Store Campaign might be OrganizedAd Group 1: Running Shoes
+	1	running shoes
+	2	running sneakers
+	3	sports shoes
+	◦	Ad Group 2: Evening Shoes
+	1	evening shoes
+	2	high heels
+	3	dress shoes
+	•	Look at Search Terms Report
+	◦	this report helps see which queries triggered your ads to appear on the search network
+	◦	use the terms report to get new keyword ideas and identify instances where you may want to use negative keywords.
+	•	Use Negative Keywords
+	◦	prevents otherwise eligible queries from triggering an ad for an irrelevant search.
+	◦	help reduce undesirable traffic and keep ad focused on searches you want.
+Review Question
+You are the marketing manager for a bank and have created a Search campaign to help drive sign-ups for the bank's new credit card. Your campaign has been running for a few weeks, and you're looking for ways to improve performance.
+Which two of the following strategies could you use to help boost the performance of you campaign
+	•	[x] Use Search Terms Report to ID keywords that are performing well.
+	•	[x] Add Negative Keywords to eliminate unnecessary traffic.
+	•	[ ] Pause all existing keywords and replace them with new keywords
+	•	[ ] Add at least 50 new keywords to each ad group in a campaign
+Key takeaways
+	•	Google Ads Search campaigns use multiple types of keywords to reach both known and unknown queries.
+	•	Keywords should be added to ad groups in themes and match types based on your business goals.
+	•	There are many ways to optimize your keyword performance, including the use of negative keywords, the Search Terms Report, and recommendations from your account's optimization score.
+Links
+https://support.google.com/google-ads/answer/2453981
+https://support.google.com/google-ads/answer/6337820
+https://support.google.com/adwords/answer/2453980
+https://support.google.com/google-ads/answer/9061546
+https://support.google.com/google-ads/answer/6154846
+https://support.google.com/google-ads/answer/6167105
+
+[4] Engage Users With Responsive Search Ads
+	•	responsive search ads can provide up to 15 headline assets and 4 description assets.
+	◦	while each ad still shows up to 3 headlines and 2 descriptions, google ads chooses the best asset combination that creates the best ad for each user to optimize performance
+	•	4 benefits of responsive search
+	1	Simplicity → Save time by creating one ad with multiple headline and description assets. Google ads figures out the most relevant combo for each user.
+	2	Flexibility → The ad adapts to different device widths giving you more room to share message to potential consumers
+	3	Control → You still provide all of the content, and if you want more control you can use pinning to restrict the position of specific headlines and descriptions in your ad.
+	4	Performance → reach more potential customers by increasing your opportunity to compete in more auctions and match to more queries.
+
+	•	Setting Up A Responsive Search Add￼￼Step 3: Enter text in provided fields
+	◦	Display URL → up to 2 path fields can be included to give people an idea of where they will arrive after they click on your ad
+	◦	Final URL → where you want the user to go after they click on your ad
+	◦	Headlines → provide up to 15 headlines for responsive search ad. the ad can show up to 3 of these at a time so write the first 3 headlines to appear together. Best practices include:
+	▪	Include top keywords in headlines & description to increase relevance
+	▪	Add unique headlines: using headlines distinct from one another gives Google Ads more options for customizing ads.
+	•	Responsive Search ads Best Practices
+	◦	ensure each ad group has at least one responsive search ad
+	◦	optimize responsive search ads by following best practices to improve your ad strength rating.
+	▪	headlines and descriptions unique
+	▪	include popular keywords in ad’s headlines and descriptions to increase relevance
+	▪	try Keyword Insertion
+	▪	View asset and keyword suggestions in ad strength tool and accept suggestions or edit or use as inspiration to advertise a product or service.
+	▪	See ad strength and improvement recommendations by adding ad strength and ad strength improvements columns.
+	◦	You can pin specific headlines or descriptions, however RSA’s perform best when ML has many asset options to choose from, so keep to minimum or avoid.
+	◦	Use RSA Asset Report to ID assets that are performing well or those that may need to be replaced.
+	◦	Once an asset is added it will enter an evaluation phase and labeled as “LEARNING “ while system tests its performance.
+	▪	when system is confident about assets performance labels it either “Low” , “Good” or “Best”
+	▪	Replace Low
+	▪	Keep Good
+	▪	Use Best as inspiration for new campaigns
+Add Image Assets To Improve Ad Quality
+	•	Image assets allow you to upload rich relevant images to complement existing text ads. The use of compelling visuals of products or services enhances the meaning of an ad and can help drive performance.
+	•	Opt in to dynamic image assets allowing google to use image content on your domain to automatically complement existing text ads with a relevant image
+	◦	ad groups with eligible marketer-provider image asset will always serve over a dynamic asset.
+	•	Image Asset Best Practices
+	◦	upload at least 4 relevant and unique images at the campaign or ad group level. At least 3 should be square, one landscape. Images with non white backgrounds have stronger performance.
+	◦	Keep most important content in center 80% of image. Provide both square and landscape ratios to maximize serving
+	◦	Images should be similar to those on landing pages to ensure customers have consistent experience. Opting into dynamic image assets make this simple by crawling landing pages for relevant images.
+	•	optimization score tip
+	◦	monitor op score for recommendations about how to optimize RSAs
+	◦	Include highlighted opportunities by recommendations
+	◦	add expanded text ad assets to RSA’s and improve ad strength.
+	•	Review QuestionYou own a water-sport-equipment rental company. You create a responsive search ad but notice that its ad strength is just average. Which two steps can you take to improve your ad strength?
+	◦	[x] Add more relevant keywords to headlines and descriptions
+	◦	[x] Add more unique headlines
+	◦	[ ] Add more responsive search ads
+	◦	[ ] Write more similar headlines
+	◦	[ ]
+	•	Key takeaways
+	◦	Responsive search ads adapt to show a relevant ad combination for each query based on the ad inputs you provide.
+	◦	Create a responsive search ad by providing up to 15 headlines, four descriptions, and one final URL. Include existing headlines and descriptions from any expanded text ads that performed well. Then add additional unique headlines and descriptions. Use ad strength to find areas where you can further optimize for effectiveness and performance.
+	◦	The Search experience continues to evolve to become more visually engaging for users. Image assets allow you to upload rich, relevant images to complement existing text ads.
+	•	ResourcesAbout RSAsCreate Effective RSAsAbout Ad StrengthCreating RSAAbout Image AssetsAbout Dynamic Image AssetsAbout Assets[5]

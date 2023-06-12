@@ -1,0 +1,12 @@
+UMAP NOTES
+	•	fast with large datasets
+	•	helps identify similarities and outliers.
+	•	goal → create a low dimensional graph of the data that preserves the High Dimensional clusters & their relationships with one another
+	•	General Idea
+	◦	initialize the low-dimensional points
+	◦	move them around until they form relationships we saw in high dimensional data
+	•	UMAP calculates Similarity Scores to help identify clustered points so it can attempt to preserve that clustering in the low dimensional graph
+	◦	First, Calculate the distances between each pair of high dimensional points
+	◦	A common default value for the # of high dimensional neighbors is 15
+	◦	UMAP takes the log2(# of high dimensional neighbors per point)
+	▪	this defines the shape of the curve
