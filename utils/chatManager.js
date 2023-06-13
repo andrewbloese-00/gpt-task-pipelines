@@ -8,6 +8,12 @@ class ChatManagerBasic {
     static GPT_TURBO = "gpt-3.5-turbo"
     static GPT_4 = "gpt-4"
     static DEFAULT_MESSAGE="You are a helpful AI assistant who will answer the user questions"
+    
+    /**
+     * 
+     * @param {string} model - the model to use for chat completions. Either 'gpt-3.5-turbo' or 'gpt-4'
+     * @param {string} sysMessage the system message to use to prompt chat completions messages.  
+     */
     constructor(model,sysMessage){
         this.history = []
         this.messages = [{content: sysMessage, role: "system"}]
