@@ -4,11 +4,10 @@ const mongoose = require("mongoose")
  * 
  * @param {string} mongo_connection_string - your database connection string
  * @param {string} collection_name = the name of the collection to embedd fields for
+ * @param {string} property - the name of the property on the documents in collection to embed. For example, if you wanted to embed the description of each product, property would be 'description'
  * @returns {*} an error message or the result of updating all valid documents in the specified db collection.
  */
-async function embedMongoDBCollection(mongo_connection_string,collection_name){
-
-    
+async function embedMongoDBCollection(mongo_connection_string,collection_name,property="text"){
     try {
         await mongoose.connect(mongo_connection_string)
     } catch (error) {
@@ -22,17 +21,14 @@ async function embedMongoDBCollection(mongo_connection_string,collection_name){
     let updates = []
 
     for(let i = 0; i < documentArray.length; i++){
-        if( !documentArray[i].text)continue
-        const { embedding, error  }=  await getEmbedding(documentArray[i].text)
+        if( !documentArray[i][property])continue
+        let currentId = documentArray[i]._id
+        const { embedding, error  }=  await getEmbedding(documentArray[i][property])
         if(error) continue
         //update
         updates.push(
-            mongoose.connection.db.collection(collection_name).updateOne(
-                {_id: documentArray[i]._id},
-                {embedding:embedding}
-            )
+            DB.collection(collection_name).updateOne({_id: currentId},{$set: {"embedding": embedding}})
         )
-
     }
     let n = updates.length;
     try {

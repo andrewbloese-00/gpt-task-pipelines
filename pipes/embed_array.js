@@ -1,6 +1,6 @@
 
 
-const getEmbedding = require("../utils/getEmbedding")
+const {getEmbedding} = require("../utils/getEmbedding")
 
 
 /**
@@ -15,7 +15,7 @@ const embedArray = async function ( array ){
     if (!(array instanceof Array)) return { error : "Must provide json of array"}
     //push embedding requests to the async jobs queue
     let jobs = [];
-    for( let i = 0; i < data.length; i++){
+    for( let i = 0; i < array.length; i++){
         //exit on invalid input
         if(!array[i].text){return {error: "Invalid, Must have text field on all elements of data array"}}
         jobs.push(getEmbedding(array[i].text))

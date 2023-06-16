@@ -1,4 +1,5 @@
-const openai = require("../llms/openai")()
+const openai = require("../llms/openai").useOpenAI()
+
 const { smartVector } = require("embedding-search-node")
 async function getEmbedding(text){
     try {

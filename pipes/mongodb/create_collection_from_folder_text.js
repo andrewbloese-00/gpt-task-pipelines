@@ -14,22 +14,22 @@ async function mongoCollectionFromFolder(connectionString,collectionName,pathToF
 
 
     try {
-        mongoose.connect(connectionString)
+        await mongoose.connect(connectionString)
+        const DB = mongoose.connection.db
+
+    
+        const { chunks } = await getFolderEmbeddings(pathToFolder,tokensPerDoc)
+    
+        const insertResult = await DB.collection(collectionName).insertMany(chunks)
+        console.log(insertResult.insertedCount + " documents were inserted into collection '" + collectionName + "'")
+        return { data: insertResult}
+    
     } catch (error) {
         console.warn("Failed to connect to mongodb");
         return {error}
     }
 
-    const DB = mongoose.connection.db
     
-    const { chunks } = await getFolderEmbeddings(pathToFolder,tokensPerDoc)
-    try {
-        const insertResult = await DB.collection(collectionName).insertMany(chunks)
-        console.log(insertResult.insertedCount + " documents were inserted into collection '" + collectionName + "'")
-        return { data: insertResult}
-    } catch (error) {
-        return {error}
-    }
 
 }
 

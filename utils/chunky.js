@@ -1,4 +1,4 @@
-const countTokens = require("./countTokens")
+const {countTokens} = require("./countTokens")
 
 function chunkText(text,tokensPerChunk=100){
     let chunks = []

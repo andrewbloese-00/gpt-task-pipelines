@@ -1,7 +1,7 @@
 const fs = require("fs")
-const chunkText = require("../utils/chunky")
-const getEmbedding = require("../utils/getEmbedding")
-const countTokens = require("../utils/countTokens")
+const {chunkText} = require("../utils/chunky")
+const {getEmbedding} = require("../utils/getEmbedding")
+const {countTokens} = require("../utils/countTokens")
 
 const wait = (ms) => new Promise(resolve=>{
     setTimeout(resolve, ms)

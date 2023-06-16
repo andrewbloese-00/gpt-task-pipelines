@@ -1,13 +1,24 @@
 # GPT-Task Pipelines
 Some GPT Task Automations implemented with Node JS. 
 
+
 **A basic overview of current task piplines [v0.0.0]**
 * Create text-with-embedding array from single text file
 * Create text-with-embedding array from text in files in specified directory
 * insert generated embeddings for existing json data or js objects
 * query embedding items with a string to get top 10 most relevant matchings from your supplied data array.
-* 🛠️ MongoDB connections such as collection creation from text files, embedding existing collections, and more coming soon!
+* MongoDB connections such as collection creation from text files, embedding existing collections, and more coming soon!
 * 🔭 In the future looking to integrate these technologies with other popular db providers and implemetations such as postgresql , firebase firestore and supabase. 
+
+
+
+****
+## Testing
+The test.js file contains a test cases for each of the different pipelines with an interactive test interface. Simply input the test number to run and view the output realtime, as well as get an idea of how long each pipeline / utility function may take to run. Once a more finalized version is established I will outline the test cases here. 
+
+****
+
+
 
 ****
 ## Installation
@@ -43,6 +54,7 @@ Note: Each token is roughly 4 characters.
 > text: string
 the text to get the number of tokens in
 
+
 **Returns**
 > numTokens:number
 The number of tokens present in the provided string
@@ -55,6 +67,7 @@ See config.example.json for more information on setup.
 **Parameters** 
 > text : string 
 The text to get the embedding vector for
+
 
 **Returns**
 * A Promise resolving with either {data} or {error}, with {data} containing a 'smartVector' containing both the embedding vector itself & its magnitude.
