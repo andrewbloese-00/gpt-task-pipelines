@@ -193,8 +193,9 @@ const {misses, chunks} = await pipelines.getFolderEmbeddings(patToFolderOfFiles,
 
 ```
 
-#### [EXPERIMENTAL NOT TESTED] Embed a mongodb collection
-Still testing / developing. Will allow client to input their connection-string for mongodb, along with the name of the collection to embed. The algorithm will then generate embeddings and update each document in the collection with the 'text' field present.
+#### embedMongoDBCollection 
+Embed a mongodb collection
+Allows client to input their connection-string for mongodb, along with the name of the collection to embed. The algorithm will then generate embeddings and update each document in the collection with the 'text' field present.
 
 **Parameters**
 > connectionString : string -> the mongodb connection string to access your atlas database. 
@@ -217,8 +218,9 @@ const args = [connectionString,collectionName];
 const {data,error} = await pipelines.embedMongoDBCollection(...args);
 
 ```
-#### [EXPERIMENTAL NOT TESTED] MongoDB Collection From Folder Of Files
-Still testing / developing. Will allow client to input their connection string for mongodb, along with the name of the collection to insert to or create. The algorithm will then aquire chunked text with embeddings and insert them as documents into the speficied collection. If the collection is not existing prior to this function, it will be created automatically. 
+#### mongoCollectionFromFolder
+MongoDB Collection From Folder Of Files 
+Allows client to input their connection string for mongodb, along with the name of the collection to insert to or create. The algorithm will then aquire chunked text with embeddings and insert them as documents into the speficied collection. If the collection is not existing prior to this function, it will be created automatically. 
 
 **Parameters**
 > connectionString : string 
@@ -245,5 +247,75 @@ const args = [connectionString,collectionName,pathToFolderOfFiles];
 const { data , error } = await pipelines.mongoCollectionFromFolder(...args);
 
 ```
+
+
+
+
+
+#### queryEmbeddedArray
+Allows user to query an array of embedded items and recieve the top "n" results.
+
+**Parameters**
+> queryString : string
+the string of text to search for in the embedded items array. 
+> source : Array<any>
+an array of items with embedding attributes containing a minimum of the fields 'text' (a string) and 'embedding' ( an object with at least { v: number[], m: number}) where v is the embedding vector using text-embedding-ada-002 and m is the magnitude of the vector. 
+> options: {threshold: number, n: number}
+Threshold is a floating point number between 0 and 1 corresponding to the cosine similarity between the query vector and the items in the source array. NOTE: 0 is least similar and 1 is most similar. 'n' is the max number of results to be returned, essentially "N most similar"
+
+**Example** 
+```javascript
+
+	const {pipelines} = require("gpt-task-pipelines")
+
+	//define arguments
+	const queryString = "How many subphyla are in the fungi kingdom?"
+	const source = [...embeddedItems]
+	const queryOptions = {threshold: 0.75, n: 5} 
+	const args = [queryString,source,queryOptions]
+	
+	//call with args
+	const result = await pipelines.queryEmbeddedArray(...args)
+	//returns the list of top 10 most similar results in the source array. 
+	console.log(result)
+                
+```
+
+#### useDataForContext
+Provided a source array containing embedding vectors, and a text query, this function will
+1. Get embedding for the text query input 
+2. Rank the items in source array based on similarity to query 
+3. Use the most relevant data from the source array as context for a gpt-3.5-turbo chat completion. 
+4. Return the result 'messages' used in the gpt request, as well as the response to the query generated with gpt. 
+
+**Parameters**
+> input : string
+the string of text representing the next user chat. Used to query the source array.  
+
+> messageHistory : Array<{role:string,content:string}>
+optional array of messages to track conversation history. Default is an empty array. 
+
+> data : Array<{[key:string]: any, embedding: {v:number[],m:number} }>
+the array of embedded items to query against when creating completions. 
+
+
+**Example** 
+```javascript
+	const { pipelines } = require("gpt-task-pipelines")
+	let history = [], //optionally provide history 
+	src = [...embeddedItems],
+	input = "How many subphyla are in the fungi kingdom?" 
+
+
+	const {data,error} = await pipelines.useDataForContext(input,src, history)
+	
+	if(error){ console.error(error); return;}
+	
+	//get result messages and the most recent answer from data 
+	const { messages, answer } = data;
+	console.log(answer); //display answer to question
+
+```
+
 
 ****

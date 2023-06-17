@@ -17,7 +17,7 @@ const { getFolderEmbeddings } = require("./pipes/folder_text_to_embedding")
 const {  embedTextFile } = require("./pipes/textfile_to_embedded_array")
 const { embedMongoDBCollection } = require("./pipes/mongodb/embed_mongo_db")
 const { mongoCollectionFromFolder } = require("./pipes/mongodb/create_collection_from_folder_text")
-
+const { queryEmbeddedArray, useDataForContext} = require('./pipes/query_embedded_array')
 
 //export in groups
 
@@ -41,5 +41,9 @@ exports.pipelines = {
     embedTextFile,
     getFolderEmbeddings,
     embedMongoDBCollection,
-    mongoCollectionFromFolder
+    mongoCollectionFromFolder,
+    queryEmbeddedArray,
+    useDataForContext,
+
+    
 }

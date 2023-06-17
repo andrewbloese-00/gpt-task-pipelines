@@ -6,32 +6,9 @@ const prompt =(text ) => new Promise((resolve, reject) =>{
 })
 const { pipelines, utils} = require("./index")
 const { MONGO_CONNECTION_STRING } = require("./config.json")
-const { read } = require('fs')
-const VERBOSE = false
-//TODO: WILL IMPLEMENT CONCRETE TESTS, INDIVIDUAL TESTING PROVED SUCCESSFUL 
-
-async function testEmbeddCollectionShopProducts(){
-    const {data,error} = await pipelines.embedMongoDBCollection(MONGO_CONNECTION_STRING,"products","description")
-    if(error) { console.warn("Error In Pipeline"); console.error(error); return }
-    console.log('success',data) 
-
-}
-
-
-async function uploadDocumentsToDBAsChunks(){
-    const { data, error } = await pipelines.mongoCollectionFromFolder(
-        MONGO_CONNECTION_STRING,
-        "notes",
-        `${__dirname}/textfiles/`
-    )
-    if(error){
-        console.warn("error in upload document pipeline")
-        console.error(error)
-        return;
-    }
-
-    console.log("success",data)
-}
+const { embedArray } = require('./pipes/embed_array')
+const VERBOSE = true
+const MENU = "Enter A Test Number (0-13) or -1 to quit\n > "
 
 
 
@@ -65,6 +42,8 @@ const collection_name = "new_test"
 
 
 async function run(mode){
+    let src = utils.chunkText(text_to_chunk,50 ).map(chunk=>({text:chunk}))
+    await embedArray(src)
     let needsCleanup = false
     switch(mode){
         case -1: {
@@ -122,6 +101,18 @@ async function run(mode){
             }
         break;}
         case 5: {//TODOtest embed collection mongo
+            const {time,result} = await timeAsync(pipelines.embedMongoDBCollection, MONGO_CONNECTION_STRING,collection_name)
+            const {error,data}= result
+            if(error){
+                console.warn("Error embedding collection from mongodb")
+                console.error(error)
+            } else {
+                console.log(`Embedded collection ${collection_name} in ${time}ms`)
+                if(VERBOSE){
+                    console.log("Results:")
+                    console.log(data)
+                }
+            }
         break;}
         case 6: {//TODOtest  create collection firebase
         break;}
@@ -178,6 +169,23 @@ async function run(mode){
             }
 
         break;}
+        case 14: { //test query embedded array
+            const queryOptions = {threshold: 0.75, n: 5}     
+            const result = await pipelines.queryEmbeddedArray(
+                "How many subphyla are in the fungi kingdom?", 
+                src,
+                queryOptions
+                )
+                console.log(result)
+                break;
+            }
+        case 15: { //test useDataForContext completion pipeline. 
+                let history =[]
+                const {result,time} = await timeAsync(pipelines.useDataForContext,"How many subphyla are in the fungi kingdom?",src,history)
+                console.log(`Created chat completion using embedding query on data in ${time}ms`)
+                if(VERBOSE){console.log("Completion Results", result);}
+            break;
+        }
 
         default:break;
     }
@@ -191,10 +199,10 @@ async function run(mode){
 
 }
 (async function main(){
-    let input = await prompt("Enter A Test Number (0-13) or -1 to quit\n > " )
+    let input = await prompt(MENU)
     while(input >= 0){
         await run(Number(input))
-        input = await prompt("Enter A Test Number (0-13) or -1 to quit\n > " )
+        input = await prompt(MENU)
     }
     if(input < 0) process.exit(0)
 
